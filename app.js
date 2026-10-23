@@ -1,0 +1,2 @@
+import {firebaseConfig} from './firebase-config.js';import {initializeApp} from 'https://www.gstatic.com/firebasejs/12.3.0/firebase-app.js';import {getFirestore,collection,getDocs,query,where} from 'https://www.gstatic.com/firebasejs/12.3.0/firebase-firestore.js';
+const db=getFirestore(initializeApp(firebaseConfig));const q=query(collection(db,'attendance_sessions'),where('active','==',true));const docs=await getDocs(q);document.querySelector('#session').textContent=docs.empty?'Belum ada sesi absensi aktif.':'Sesi absensi aktif — silakan scan QR admin.';

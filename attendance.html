@@ -1,0 +1,5 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Absensi Siswa</title><link rel="stylesheet" href="css/style.css"></head>
+<body><main class="center"><section class="card form-card"><h1>ABSENSI SISWA</h1><p id="sessionInfo" class="notice"></p>
+<form id="attendanceForm"><label>Nama Lengkap<input id="nama" required></label><label>Kelas<input id="kelas" required></label><label>NIS/NISN<input id="nis" required></label>
+<fieldset><legend>Status Kehadiran</legend><label class="radio"><input name="status" type="radio" value="HADIR" checked> HADIR</label><label class="radio"><input name="status" type="radio" value="IZIN"> IZIN</label><label class="radio"><input name="status" type="radio" value="SAKIT"> SAKIT</label><label class="radio"><input name="status" type="radio" value="ALPA"> ALPA</label></fieldset>
+<button class="btn primary">KIRIM ABSENSI</button></form><p id="msg" class="notice"></p></section></main><script type="module" src="js/attendance.js"></script></body></html>
